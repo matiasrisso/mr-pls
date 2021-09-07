@@ -251,7 +251,7 @@ st.write(df)
 
 st.subheader('2. Components')
 st.markdown('**2.1 Scores plot**')
-col1, col2 = st.beta_columns([2,1])
+col1, col2 = st.columns([2,1])
 with col2:
     axis_x = st.selectbox('X axis', np.arange(1, A+1), index=0)
     axis_y = st.selectbox('Y axis', np.arange(1, A+1), index=1)
@@ -266,7 +266,6 @@ st.markdown('**2.2 Variables plot**')
 var_comp_plot(axis_x, axis_y)
 st.markdown('**2.3 Coefficients plot**')
 var_contrib()
-st.bar_chart(pls.coef_.T[0] )
 
 st.subheader('3. Validation')
 st.markdown('**3.1 SPE**')
