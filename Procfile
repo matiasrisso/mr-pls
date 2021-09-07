@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run linopt_small_scipy_v2.py
+web: sh setup.sh && streamlit run PLS.py
